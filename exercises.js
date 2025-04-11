@@ -22,9 +22,7 @@ const ejercicio1 = () => {
     //esto hace circulaar la lista x_x
     const nextIndex = (i + 1) % inputArr.length;
   
-    if (current === inputArr[nextIndex]) {
-      sum += parseInt(current);
-    }
+    if (current === inputArr[nextIndex]) sum += parseInt(current);
   }
 
   console.log(sum)
@@ -54,9 +52,7 @@ const ejercicio2 = () => {
     const restante = i + numSaltos - inputArr.length;
     const nuevoIndice = restante < 0 ? numSaltos + i : restante;
   
-    if (current === inputArr[nuevoIndice]) {
-      sum += parseInt(current);
-    }
+    if (current === inputArr[nuevoIndice]) sum += parseInt(current);
   }
   console.log(sum);
 };
